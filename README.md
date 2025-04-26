@@ -1,13 +1,127 @@
-# React + Vite
+# Sparklehood - HumanChain Assignment 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Frontend Take-Home Assignment for **HumanChain** – Building an **AI Safety Incident Dashboard** with React, Vite, and TailwindCSS.
 
-Currently, two official plugins are available:
+Live Demo: [sparklehood-humanchain-assignment.vercel.app](https://sparklehood-humanchain-assignment.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+GitHub Repo: [Sparklehood-HumanChain-Assignment](https://github.com/Aaditya-Kumar-Mittal/Sparklehood-HumanChain-Assignment.git)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Sparklehood-HumanChain-Assignment
+## 🛠️ Project Structure
+
+```plaintext
+/src
+  /assets       (Images and static files)
+  /components
+    Loader.jsx
+    Navbar.jsx
+    HeroSection.jsx
+    IncidentDashboard.jsx
+    IncidentList.jsx
+    IncidentItem.jsx
+    NewIncidentForm.jsx
+  /pages
+    Home.jsx
+    About.jsx
+    Dashboard.jsx
+    Report.jsx
+  /context
+    IncidentContext.jsx
+  App.jsx
+  index.js
+  index.css    (TailwindCSS setup)
+```
+
+---
+
+## 🚀 Tech Stack
+
+- **React** (with Vite for faster development)
+- **TailwindCSS** (for responsive, modern styling)
+- **React Context API** (for state management)
+- **Vercel** (for live deployment)
+
+---
+
+## 🧩 Features
+
+- Loader page with smooth transition
+- Navbar with routing to:
+  - Home (Hero Section)
+  - About Us page
+  - Incident Dashboard (View and Manage incidents)
+  - Report New Incident page
+- Incident Dashboard:
+  - **Dropdown** to filter incidents by Severity
+  - **Sort** incidents by Newest / Oldest
+  - **Live Search** by Incident Title
+  - **Expandable Details** for each incident
+- New Incident Form:
+  - Add new incidents dynamically (valid for current session)
+  - Basic input validation
+- Responsive and mobile-friendly design
+
+---
+
+## 🛠️ How to Run Locally
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Aaditya-Kumar-Mittal/Sparklehood-HumanChain-Assignment.git
+   ```
+
+2. **Navigate into the project directory:**
+
+   ```bash
+   cd Sparklehood-HumanChain-Assignment
+   ```
+
+3. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+4. **Run the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 📚 Design Decisions and Challenges
+
+- **State Management:** Chose React Context API for simple and scalable state management without introducing Redux.
+- **Session Persistence:** Incidents are stored only in memory for the current session as per assignment requirements.
+- **Responsiveness:** TailwindCSS was selected for fast, mobile-first, and clean UI.
+- **Loader & Navigation:** Smooth UX flow with a loader screen and intuitive navigation.
+- **Filter Improvements:** Initially used buttons for severity filter but upgraded to a **dropdown** for a cleaner professional dashboard look.
+
+---
+
+## 📸 Screenshots
+
+| Home                                      |
+| :---------------------------------------- |
+| ![Home](./screenshots/home.png)           |
+| About                                     |
+| ![About](./screenshots/about.png)         |
+| Dashboard                                 |
+| ![Dashboard](./screenshots/dashboard.png) |
+| Report                                    |
+| ![Report](./screenshots/report.png)       |
+
+---
+
+## 📃 License
+
+This project is intended solely for the purpose of **Sparklehood - HumanChain Assignment**.
+
+---
+
+Made with 🎯 for HumanChain's mission of **AI Safety and Trust** by Aaditya Kumar Mittal
+
+---
